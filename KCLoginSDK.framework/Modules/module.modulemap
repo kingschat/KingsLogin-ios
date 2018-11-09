@@ -1,0 +1,11 @@
+framework module KCLoginSDK {
+  umbrella header "KCLoginSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module KCLoginSDK.Swift {
+    header "KCLoginSDK-Swift.h"
+    requires objc
+}
