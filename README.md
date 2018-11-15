@@ -1,9 +1,7 @@
-# Kingschat For Developers (BETA)
+# KingsChat For Developers
 This library allows your app to login using Kingschat.
 Written in Swift 4.2
 Supported iOS version 11.0 and higher
-
-[Download link]()
 
 # Installation Guide
 
@@ -12,7 +10,7 @@ Supported iOS version 11.0 and higher
  * CocoaPods
  - Navigate to your project folder in terminal
  - Make sure you have the CocoaPods installed 
- - Add `pod 'KCLoginSdk'` to your Podfile
+ - Add `pod 'KCLoginSDK'` to your Podfile
  - Run the following command in your project root directory from a terminal window
  `$ pod install`
 

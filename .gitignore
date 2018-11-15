@@ -1,0 +1,57 @@
+# Mac OS X
+*.DS_Store
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xcsettings
+xcuserdata/
+Example/xcuserdata/
+!*.xccheckout
+*.xcscmblueprint
+
+# Generated files
+*.o
+*.pyc
+
+#Python modules
+MANIFEST
+dist/
+
+# Backup files
+*~.nib
+\#*#
+.#*
+
+# Pods
+Pods/
+Example/Pods
+
+# Carthage
+Carthage/
+Example/Carthage
+
+# certs
+*.p12
+
+# artifacts
+*.ipa
+*.dSYM.zip
+*.mobileprovision
+fastlane/report.xml
+
+# local
+.env.local
+artifacts/
+Example/artifacts/
+.tool-versions-e
+
+# test coverage
+*.gcda
+
+# bundler
+vendor/
+Example/vendor
