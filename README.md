@@ -1,20 +1,28 @@
+
 # KingsChat For Developers
-This library allows your app to login using Kingschat.
-Written in Swift 4.2
-Supported iOS version 11.0 and higher
+
+[![Version](https://img.shields.io/cocoapods/v/KCLoginSDK.svg?style=flat)](https://cocoapods.org/pods/KCLoginSDK)
+[![License](https://img.shields.io/cocoapods/l/KCLoginSDK.svg?style=flat)](https://cocoapods.org/pods/KCLoginSDK)
+[![Platform](https://img.shields.io/cocoapods/p/KCLoginSDK.svg?style=flat)](https://cocoapods.org/pods/KCLoginSDK)
+
+This library allows your app to login using Kingschat.  
+Written in Swift 4.2  
+Supported iOS version 11.0 and higher  
 
 # Installation Guide
 
- 1. Create your app in [Kingschat Dashboard](https://developer.kingsch.at/)
- 2. Integration
- * CocoaPods
- - Navigate to your project folder in terminal
- - Make sure you have the CocoaPods installed 
- - Add `pod 'KCLoginSDK'` to your Podfile
- - Run the following command in your project root directory from a terminal window
+ Create your app in [Kingschat Dashboard](https://developer.kingsch.at/)
+
+ ## [CocoaPods](http://cocoapods.org/)
+ 1. Navigate to your project folder in terminal
+ 2. Make sure you have the CocoaPods installed 
+ 3. Add `pod 'KCLoginSDK'` to your Podfile
+ 4. Run the following command in your project root directory from a terminal window
  `$ pod install`
 
- 3. Configure `info.plist` file
+## App implementation
+
+ 1. Configure `info.plist` file
  * Right click `info.plist`, and choose Open As Source Code
  * Copy and paste the following XML snippet into the body of your file ( `<dict>...</dict>`).
 ```html
@@ -34,7 +42,7 @@ Supported iOS version 11.0 and higher
 	<string>kingschat</string>
 </array>
 ```
- 5. Connect your `AppDelegate`
+ 2. Connect your `AppDelegate`
  * Set delegate
  ```swift
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -63,9 +71,8 @@ extension AppDelegate: KCLoginManagerDelegate {
     }
 }
  ```
-
  
- 7. Add Kingschat login to your code
+ 3. Add Kingschat login to your code
 ```swift 
 import UIKit
 import KCLoginSDK
@@ -82,4 +89,7 @@ class ViewController: UIViewController {
 	}
 }
 ```
+
+## Example
+For more information about implementation check our example app
 
